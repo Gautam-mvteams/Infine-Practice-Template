@@ -24,10 +24,10 @@ body {
     background-size: cover;
     margin: 3vw 0vw;
     position: relative;
-    background-position: center;
-    
-    background-attachment: fixed;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center 20.5172px;
 }
 
 .header::before {
