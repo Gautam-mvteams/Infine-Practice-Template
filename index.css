@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 
 body {
@@ -154,7 +153,6 @@ body {
         width: 100%;
         border-radius: 0px;
         position: relative;
-        margin-top: 0px;
     }
 
     .navbar {
@@ -209,7 +207,6 @@ body {
     .header{
         width: 100%;
         border-radius: 0px;
-        margin-top: 0px;
     }
 
     .navbar{
@@ -703,7 +700,7 @@ body {
 }
 
 .main-image {
-    width: 95%;
+    width: 100%;
     height: 600px;
     object-fit: cover;
     border-radius: 20px;
@@ -721,30 +718,25 @@ body {
     .content {
         padding-right: 0;
         order: 2;
-        padding: 0px 0px;
-        width: 90%;
-        margin: auto;}
+        padding: 0px 23px;
+    }
 
     .main-heading {
         font-size: 7vw;
-    }
-    .main-image{
-        padding: 0px 0px;
     }
 
     .stats-container {
         justify-content: center;
         gap: 10px;
-        flex-direction: column;
     }
 
     .circle {
-        width: 40px;
-        height: 40px;
+        width: 80px;
+        height: 80px;
     }
 
     .stat-number {
-        font-size: 1vw;
+        font-size: 24px;
     }
 }
 
@@ -756,7 +748,7 @@ body {
     }
 
     .content {
-        max-width: 100%;
+        max-width: 90%;
         flex-direction: column;
     }
 
