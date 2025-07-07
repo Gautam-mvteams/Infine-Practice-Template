@@ -1683,6 +1683,10 @@ body {
         padding: 3vw 0vw;
         display: flex;
     }
+
+    #marque-effect div{
+        font-size: 20vw;
+    }
 }
 
 @media (min-width:749px) and (max-width:1000px) {
