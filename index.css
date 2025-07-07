@@ -153,6 +153,7 @@ body {
         width: 100%;
         border-radius: 0px;
         position: relative;
+        margin-top: 0px;
     }
 
     .navbar {
@@ -207,6 +208,7 @@ body {
     .header{
         width: 100%;
         border-radius: 0px;
+        margin-top: 0px;
     }
 
     .navbar{
