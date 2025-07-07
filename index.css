@@ -577,7 +577,7 @@ body {
 }
 
 .container {
-    max-width: 65%;
+    max-width: 55%;
     margin: 0 auto;
     padding: 60px 0px;
     display: grid;
