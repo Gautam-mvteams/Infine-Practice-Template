@@ -1046,7 +1046,7 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
-    font-size: 14px;
+    font-size: 12px;
     color: #6b7280;
 }
 
@@ -2004,7 +2004,7 @@ body {
 
     .faq-right-divs {
         width: 100%;
-        gap: 29vw;
+        gap: 9vw;
     }
 
     .faq-right-divs :nth-child(2) {
