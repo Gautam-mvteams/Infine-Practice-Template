@@ -15,19 +15,54 @@ body {
     max-width: 100%;
 }
 
-
 .header {
     width: 90%;
     border-radius: 20px;
-    background-image: url("	https://html.awaikenthemes.com/infine/images/hero-bg.jpg");
+    background-image: url("https://html.awaikenthemes.com/infine/images/hero-bg.jpg");
     height: 90vh;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 3vw 0vw;
     position: relative;
     background-position: center;
+    min-height: 500px;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
+.header::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(220deg,
+        rgba(4, 42, 45, 0) 17.11%,
+        #042a2d 100%);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.header > * {
+    position: relative;
+    z-index: 2;
+}
+
+.header h1,
+.header h2,
+.header h3,
+.header p,
+.header span,
+.header a,
+.header button {
+    position: relative;
+    z-index: 2;
+}
 
 .navbar {
     width: 70%;
@@ -136,10 +171,17 @@ body {
     color: white;
 }
 
+#nav-hr{
+    width: 70%;
+    color: white;
+    margin: auto;
+}
+
 .services-container {
     width: 90%;
     margin: 0 auto;
-    background: #042A2D;;
+    background: #042A2D;
+    ;
     border-radius: 24px;
     position: relative;
     overflow: hidden;
@@ -204,23 +246,23 @@ body {
     }
 }
 
-@media (min-width:768px) and (max-width: 1000px){
-    .header{
+@media (min-width:768px) and (max-width: 1000px) {
+    .header {
         width: 100%;
         border-radius: 0px;
         margin-top: 0px;
     }
 
-    .navbar{
+    .navbar {
         width: 90%;
     }
 
-    .header-content{
+    .header-content {
         width: 90%;
         margin-top: 40vw;
     }
 
-    .logo img{
+    .logo img {
         width: 20vw;
     }
 
@@ -232,7 +274,7 @@ body {
         font-size: 2vw;
     }
 
-    .nav-links{
+    .nav-links {
         display: none;
     }
 }
@@ -259,8 +301,8 @@ body {
     left: 264px;
     bottom: 206px;
     border-radius: 25px;
-    border-top: 17px solid white;
-    border-left: 17px solid white;
+    border-top: 17px solid #f8f9fa;
+    border-left: 17px solid #f8f9fa;
 }
 
 .aboutus-results {
@@ -288,6 +330,7 @@ body {
     color: #042a2d;
     font-size: 1vw;
     font-weight: 500;
+    line-height: 2.5vw;
 }
 
 #goals i {
@@ -337,27 +380,27 @@ body {
     }
 }
 
-@media (min-width:768px) and (max-width: 1000px){
-    .services-container{
+@media (min-width:768px) and (max-width: 1000px) {
+    .services-container {
         width: 100%;
         border-radius: 0px;
         padding: 0px 0px;
     }
 
-    .content-wrapper{
+    .content-wrapper {
         flex-direction: column;
         width: 90%;
         margin: auto;
         padding: 100px 0px;
     }
 
-    .aboutus{
+    .aboutus {
         width: 90%;
         flex-direction: column;
         margin-bottom: 10vw;
     }
 
-    .about-us-div-right-section :nth-child(2){
+    .about-us-div-right-section :nth-child(2) {
         left: -168px;
         bottom: -91px;
     }
@@ -366,7 +409,7 @@ body {
         font-size: 2.5vw;
     }
 
-    #goals{
+    #goals {
         font-size: 2vw;
     }
 
@@ -499,6 +542,15 @@ body {
     line-height: 1.5;
 }
 
+.service-p{
+    display: flex;
+    flex-direction: column;
+}
+
+#creative-results{
+    color: #042a2d;
+}
+
 .bottom-cta {
     display: flex;
     align-items: center;
@@ -567,7 +619,7 @@ body {
         flex-direction: column;
     }
 
-    .content-wrapper{
+    .content-wrapper {
         width: 90%;
         flex-direction: column;
         margin: auto;
@@ -583,7 +635,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
-   
+
 }
 
 .content {
@@ -716,12 +768,13 @@ body {
         padding: 40px 0px;
         max-width: 100%;
     }
-    
-    .main-image{
+
+    .main-image {
         padding: 0px 0px;
         width: 90%;
         margin: auto;
     }
+
     .content {
         padding-right: 0;
         order: 2;
@@ -747,7 +800,7 @@ body {
         font-size: 20px;
     }
 
-    .stat-label{
+    .stat-label {
         font-size: 12px;
     }
 }
@@ -764,12 +817,12 @@ body {
         flex-direction: column;
     }
 
-    .stats-container{
+    .stats-container {
         justify-content: space-around;
     }
 
 
-    .left-content{
+    .left-content {
         max-width: 100%;
     }
 
@@ -787,7 +840,8 @@ body {
 
 .pricing-content-wrapper {
     display: flex;
-    padding: 50px 172px;;
+    padding: 50px 172px;
+    ;
     gap: 80px;
 }
 
@@ -796,6 +850,7 @@ body {
     grid-template-columns: 1fr 2fr;
     align-items: start;
     justify-content: space-between;
+    gap: 3vw;
 }
 
 .pricing-left {
@@ -845,11 +900,6 @@ body {
     transition: all 0.3s ease;
     border: none;
     cursor: pointer;
-}
-
-.get-touch-btn:hover {
-    background: #059669;
-    transform: translateY(-2px);
 }
 
 .get-touch-btn svg {
@@ -1092,6 +1142,7 @@ body {
 .our-expertise-content-div {
     display: flex;
     padding: 60px 20px;
+    gap: 3vw;
 }
 
 .our-expertise-label {
@@ -1360,10 +1411,14 @@ body {
     gap: 1vw;
 }
 
+.faq-inisde-contact-us-images {
+    display: flex;
+}
+
 .faq-inisde-contact-us-images img {
     border-radius: 50%;
     height: 50px;
-    width: 50px
+    width: 50px;
 }
 
 .faq-inisde-contact-us-images :nth-child(2) {
@@ -2102,7 +2157,7 @@ body {
         font-size: 2.5vw;
     }
 
-    .service-description{
+    .service-description {
         font-size: 20px;
     }
 }
@@ -2110,6 +2165,10 @@ body {
 hr {
     color: #a9a2a2;
 }
+
+
+
+
 
 
 .coaching-videos {
@@ -2125,6 +2184,34 @@ hr {
     position: relative;
     justify-content: center;
     background-position: center;
+
+
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.coaching-videos::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg,
+            rgba(4, 42, 45, 0) 17.11%,
+            #042a2d 100%);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+
+.coaching-videos>* {
+    position: relative;
+    z-index: 2;
 }
 
 
@@ -2169,7 +2256,7 @@ hr {
 .coaching-content-bottom-div span {
     color: white;
     font-weight: 500;
-    font-size: 1vw;
+    font-size: 0.9vw;
 }
 
 #play-icon {
