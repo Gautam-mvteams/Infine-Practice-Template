@@ -716,11 +716,17 @@ body {
         padding: 40px 0px;
         max-width: 100%;
     }
-
+    
+    .main-image{
+        padding: 0px 0px;
+        width: 90%;
+        margin: auto;
+    }
     .content {
         padding-right: 0;
         order: 2;
-        padding: 0px 23px;
+        width: 90%;
+        margin: auto;
     }
 
     .main-heading {
@@ -733,12 +739,16 @@ body {
     }
 
     .circle {
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
     }
 
     .stat-number {
-        font-size: 24px;
+        font-size: 20px;
+    }
+
+    .stat-label{
+        font-size: 12px;
     }
 }
 
