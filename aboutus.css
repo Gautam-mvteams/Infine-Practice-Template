@@ -197,7 +197,7 @@ body {
 }
 
 .our-approach-container-upper-section-div-2 {
-    width: 40%;
+    width: 100%;
 }
 
 .our-approach-container-upper-section-label {
@@ -235,7 +235,7 @@ body {
 }
 
 .our-approach-container-upper-section-div-2 {
-    text-align: end;
+    text-align: start;
 }
 
 .our-approach-bottom-section-div {
