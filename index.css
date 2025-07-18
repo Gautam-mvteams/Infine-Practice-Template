@@ -693,7 +693,7 @@ body {
 
 .pricing-content {
     width: 1300px;
-    padding-left: 15px; 
+    padding-left: 15px;
     padding-right: 15px;
     display: flex;
     grid-template-columns: 1fr 2fr;
@@ -1301,7 +1301,7 @@ body {
 }
 
 .faq-right-divs {
-    border: 1px solid rgb(184, 178, 178);
+    border: 1px solid rgb(222 218 218);
     padding: 10px;
     width: 36vw;
     display: flex;
@@ -1329,7 +1329,8 @@ body {
     background-color: #042a2d;
     border-radius: 20px;
     margin: 5vw 0vw;
-    margin-top: 0vw;;
+    margin-top: 0vw;
+    ;
 }
 
 .testimonial-content {
@@ -1454,7 +1455,7 @@ body {
     .testimonial-content {
         flex-direction: column;
         width: 100%;
-        padding : 50px 15px;
+        padding: 50px 15px;
     }
 
     .testimonial-content-upper-div {
@@ -1783,6 +1784,10 @@ body {
 
     #marque-effect {
         font-size: 25vw;
+    }
+
+    .faq-right-inside {
+        gap: 3vw;
     }
 }
 
