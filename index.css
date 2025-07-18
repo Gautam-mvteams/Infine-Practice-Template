@@ -203,8 +203,8 @@ body {
         width: 40%;
     }
 
-    .about-us-div-right-section {
-        height: 100vw;
+    .about-us-div-left-section{
+        margin-top: -30vw;
     }
 
     #goals {
