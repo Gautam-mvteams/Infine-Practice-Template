@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: Hidden;
 }
 
 body {
@@ -71,6 +70,7 @@ body {
 .nav-links {
     display: flex;
     list-style: none;
+    flex-direction: column;
 }
 
 .nav-links li a {
@@ -197,7 +197,7 @@ body {
 }
 
 .our-approach-container-upper-section-div-2 {
-    width: 100%;
+    width: 40%;
 }
 
 .our-approach-container-upper-section-label {
@@ -235,7 +235,7 @@ body {
 }
 
 .our-approach-container-upper-section-div-2 {
-    text-align: start;
+    text-align: end;
 }
 
 .our-approach-bottom-section-div {
@@ -1531,7 +1531,7 @@ body {
     .footer {
         width: 100%;
         border-radius: 0px;
-        margin-bottom: 0px;;
+        margin-bottom: 0px;
     }
 
     .footer-main{
