@@ -1301,8 +1301,6 @@ body {
 }
 
 .faq-right-divs {
-    border: 1px solid rgb(222 218 218);
-    padding: 10px;
     width: 36vw;
     display: flex;
     justify-content: space-between;
@@ -1314,14 +1312,8 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 1vw;
     color: #042a2d;
     font-weight: bolder
-}
-
-.faq-right-divs :nth-child(2) {
-    font-size: 1.5vw;
-    font-weight: bolder;
 }
 
 .Testimonial {
@@ -1728,11 +1720,6 @@ body {
         gap: 9vw;
     }
 
-    .faq-right-divs :nth-child(2) {
-        font-size: 7.5vw;
-        font-weight: 400;
-    }
-
     .wo-we-are {
         width: 100%;
         border-radius: 0px;
@@ -1784,10 +1771,6 @@ body {
 
     #marque-effect {
         font-size: 25vw;
-    }
-
-    .faq-right-inside {
-        gap: 3vw;
     }
 }
 
@@ -2062,4 +2045,67 @@ hr {
         background-position: center 0;
     }
 
+}
+
+.faq-item {
+  margin-bottom: 16px;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border: 1px solid #e2e2e2;
+}
+
+.faq-toggle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.faq-answer {
+  display: none;
+   background: linear-gradient(to right, #019297 0%, #73ed7c 100%);
+  color: #fff;
+  margin-top: 4px;
+  padding: 22px 24px;
+  border-radius: 10px;
+  font-size: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  animation: fadeIn 0.3s;
+  font-weight: 400;
+}
+
+.faq-item.open .faq-answer {
+  display: block;
+}
+
+.faq-item.open .faq-toggle {
+  content: "×";
+  transform: rotate(90deg);
+}
+
+.faq-item.open .faq-toggle::after {
+  content: "×";
+  display: inline;
+}
+
+.faq-item .faq-toggle::after {
+  content: "+";
+  display: inline;
+}
+
+.faq-item.open .faq-toggle::after {
+  content: "×";
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px);}
+  to { opacity: 1; transform: translateY(0);}
 }
