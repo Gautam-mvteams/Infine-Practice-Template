@@ -43,12 +43,10 @@ body {
     width: 100%;
     height: 100%;
     pointer-events: none;
-    z-index: 1;
 }
 
 .aboutus-page-header>* {
     position: relative;
-    z-index: 2;
 }
 
 .navbar {
@@ -70,7 +68,6 @@ body {
 .nav-links {
     display: flex;
     list-style: none;
-    flex-direction: column;
 }
 
 .nav-links li a {
@@ -127,7 +124,6 @@ body {
     max-width: 1560px;
     margin: 0 auto;
     padding: 0 30px;
-    z-index: 1;
     position: absolute;
     bottom: 160px;
     left: 100px;
@@ -698,7 +694,6 @@ body {
     object-fit: cover;
     border-radius: 30px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
-    z-index: 1;
 }
 
 .circular-text {
@@ -708,7 +703,6 @@ body {
     transform: translate(-50%, -40%);
     width: 220px;
     height: 220px;
-    z-index: 2;
     pointer-events: none;
 }
 
@@ -730,14 +724,13 @@ body {
 
 }
 
-
 .why-choose-us-image-container :nth-child(2) {
     border-radius: 20px;
     position: absolute;
-    z-index: 1;
     left: 90px;
     bottom: 28px;
     width: 52%;
+    z-index: 1;
 }
 
 .why-choose-us-image-container :nth-child(1) {
@@ -745,8 +738,8 @@ body {
     top: 28px;
     border-radius: 20px;
     position: absolute;
-    z-index: 2;
     animation: rotateInfinite 25s linear infinite;
+    z-index: 2;
 }
 
 .footer {
@@ -1237,7 +1230,7 @@ body {
 
     .aboutus-page-header {
         width: 100%;
-        height: 310px;
+        height: 340px;
         border-radius: 0px;
         margin: 0;
         margin-bottom: 50px;
@@ -1605,4 +1598,116 @@ body {
         padding: 20px 16px 20px 16px;
     }
 
+}
+
+
+/* Hide mobile drawer by default, show only on mobile */
+.mobile-drawer {
+  display: none;
+}
+
+/* Hide desktop navbar on mobile, show mobile drawer */
+@media (max-width: 748px) {
+  .navbar {
+    display: none !important;
+  }
+  .mobile-drawer {
+    display: block;
+    position: relative;
+    width: 100%;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    padding-top: 14px;
+  }
+  .mobile-drawer .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 10px;
+    text-decoration: none;
+  }
+  .mobile-drawer .menu {
+    clear: both;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .2s ease-out;
+    background: linear-gradient(to right, #019297 0%, #73ed7c 100%);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .mobile-drawer .menu-btn:checked ~ .menu {
+    max-height: 100%;
+     background: linear-gradient(to right, #019297 0%, #73ed7c 100%);
+  }
+  .mobile-drawer .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 22px 15px;
+    position: relative;
+    user-select: none;
+     background: linear-gradient(to right, #019297 0%, #73ed7c 100%);
+     border-radius: 10px;
+     margin-top: 10px;
+     margin-right: 10px;
+  }
+  .mobile-drawer .menu-icon .navicon {
+    background: #fff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  .mobile-drawer .menu-icon .navicon:before,
+  .mobile-drawer .menu-icon .navicon:after {
+    background: #fff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  .mobile-drawer .menu-icon .navicon:before {
+    top: 5px;
+  }
+  .mobile-drawer .menu-icon .navicon:after {
+    top: -5px;
+  }
+  .mobile-drawer .menu-btn {
+    display: none;
+  }
+  .mobile-drawer .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  .mobile-drawer .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  .mobile-drawer .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  .mobile-drawer .menu li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+  }
+
+      .logo img{
+        width: 35vw;
+      }
+}
+
+/* Hide mobile drawer on desktop */
+@media (min-width: 749px) {
+  .mobile-drawer {
+    display: none !important;
+  }
 }
