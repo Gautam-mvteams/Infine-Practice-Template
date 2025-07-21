@@ -926,7 +926,7 @@ body {
 @media (max-width: 1000px) {
     .why-choose-us-section {
         flex-direction: column;
-        padding: 30px 10px;
+        padding: 30px 0px;
         gap: 30px;
     }
 
@@ -1494,13 +1494,13 @@ body {
     }
 
     .why-choose-us-image-container :nth-child(1) {
-        left: 0px;
+        left: 15px;
         bottom: 14px;
         width: 30%;
     }
 
     .why-choose-us-image-container :nth-child(2) {
-        left: 0px;
+        left: 15px;
         width: 57%;
         top: 80px;
     }
@@ -1509,19 +1509,19 @@ body {
         border-radius: 20px;
         position: absolute;
         width: 70%;
+        right: 15px;
         height: auto;
         object-fit: cover;
     }
 
     .why-choose-us-section {
         gap: 0px;
-        padding-left: 15px;
-        padding-right: 15px;
         margin-bottom: 85vw;
     }
 
     .why-choose-us-content {
-        padding-right: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .why-choose-description {
