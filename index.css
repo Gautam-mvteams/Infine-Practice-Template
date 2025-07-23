@@ -13,6 +13,7 @@ body {
     align-items: center;
     justify-content: center;
     max-width: 100%;
+    overflow-x: hidden;
 }
 
 .services-container {
@@ -24,6 +25,7 @@ body {
     overflow: hidden;
     margin-top: 5vw;
     padding: 100px 210px;
+    margin-bottom: 5vw;
 }
 
 
@@ -147,7 +149,7 @@ body {
 .aboutus-results {
     display: flex;
     justify-content: space-between;
-    padding: 2vw 0vw;
+    padding: 4vw 0vw;
 }
 
 .aboutus-winnings {
@@ -203,7 +205,7 @@ body {
         width: 40%;
     }
 
-    .about-us-div-left-section{
+    .about-us-div-left-section {
         margin-top: -30vw;
     }
 
@@ -227,6 +229,7 @@ body {
         width: 100%;
         border-radius: 0px;
         padding: 0px 0px;
+        margin-bottom: 5vw;
     }
 
     .content-wrapper {
@@ -239,7 +242,7 @@ body {
     .aboutus {
         width: 100%;
         flex-direction: column;
-        margin-bottom: 10vw;
+        margin-bottom: 0vw;
         height: 100%;
     }
 
@@ -253,7 +256,8 @@ body {
     }
 
     #goals {
-        font-size: 2vw;
+        font-size: 3vw;
+        line-height: 2em;
     }
 
 
@@ -440,6 +444,7 @@ body {
         margin: 16vw 0vw;
         border-radius: 0px;
         padding: 0px 0px;
+        margin-bottom: 5vw
     }
 
     .services-grid {
@@ -448,7 +453,8 @@ body {
     }
 
     .main-heading-1 {
-        font-size: 7vw;
+        font-size: 40px;
+        width: 60%;
     }
 
     .bottom-cta {
@@ -482,7 +488,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
-
+    padding-top: 0px;
 }
 
 .content {
@@ -652,13 +658,13 @@ body {
 
 @media (min-width:768px) and (max-width:1000px) {
     .container {
-        max-width: 90%;
+        max-width: 100%;
         display: flex;
         flex-direction: column;
     }
 
     .content {
-        max-width: 90%;
+        max-width: 100%;
         flex-direction: column;
     }
 
@@ -669,6 +675,10 @@ body {
 
     .left-content {
         max-width: 100%;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
     }
 
 }
@@ -893,33 +903,6 @@ body {
     border-top: 1px solid #e5e7eb;
 }
 
-
-@media (min-width:768px) and (max-width:1000px) {
-    .pricing-container {
-        width: 100%;
-        padding: 0px 0px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .pricing-content {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 40px;
-        width: 90%;
-    }
-
-    .pricing-left {
-        max-width: 100%;
-    }
-
-    .package-card {
-        width: 100%;
-    }
-
-}
-
 @media (max-width: 768px) {
     .pricing-container {
         padding: 50px 0px;
@@ -965,6 +948,41 @@ body {
     .feature-check::after {
         font-size: 10px;
     }
+}
+
+@media (min-width:768px) and (max-width:1000px) {
+    .pricing-container {
+        width: 100%;
+        padding: 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        width: 100%;
+        margin: 5vw 0vw
+    }
+
+    .pricing-left {
+        max-width: 100%;
+    }
+
+    .package-card {
+        width: 100%;
+    }
+
+    .pricing-heading {
+        font-size: 40px;
+    }
+
+    .main-heading {
+        font-size: 40px;
+    }
+
 }
 
 .our-expertise {
@@ -1089,12 +1107,16 @@ body {
 
 @media (min-width:749px) and (max-width:1000px) {
     .our-expertise {
-        width: 95%;
+        width: 100%;
     }
 
     .our-expertise-content-div {
         flex-direction: column;
         gap: 5vw;
+    }
+
+    .our-expertise-main-heading {
+        font-size: 40px;
     }
 }
 
@@ -1139,13 +1161,12 @@ body {
 
 .how-we-are-works-content span {
     color: #042a2d;
-    font-size: 1.5vw;
+    font-size: 22px;
     font-weight: 500;
 }
 
 .how-we-are-works-content p {
     color: #aaaba8;
-    font-size: 20px;
 }
 
 #how-we-are-btn {
@@ -1263,8 +1284,8 @@ body {
 
 .faq-inisde-contact-us-images img {
     border-radius: 50%;
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
 }
 
 .faq-inisde-contact-us-images :nth-child(2) {
@@ -1293,6 +1314,7 @@ body {
 }
 
 .faq-right {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1301,7 +1323,7 @@ body {
 }
 
 .faq-right-divs {
-    width: 36vw;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     border-radius: 10px;
@@ -1553,7 +1575,7 @@ body {
     }
 
     .testimonial-main-heading {
-        font-size: 4.5vw;
+        font-size: 40px;
         width: 100%;
     }
 
@@ -1596,7 +1618,7 @@ body {
     }
 
     .how-we-are {
-        width: 90%;
+        width: 100%;
     }
 
     .our-expertise-content-1 {
@@ -1621,7 +1643,7 @@ body {
     padding-right: 15px;
     display: flex;
     justify-content: space-between;
-    margin: 3vw 0vw;
+    margin-bottom: 5vw;
     gap: 3vw;
 }
 
@@ -1777,13 +1799,24 @@ body {
 @media (min-width:749px) and (max-width:1000px) {
 
     .news-and-posts {
-        width: 90%;
+        width: 100%;
         flex-direction: column;
         gap: 3vw;
     }
 
     .news-and-posts-div2-content img {
         width: 45vw;
+        height: 36vw;
+        object-position: center;
+        object-fit: cover;
+    }
+
+    #news-and-posts-hr{
+        border: 1px solid #ebebeb;
+    }
+
+    .news-and-posts-div2{
+        gap: 5vw;
     }
 
     .news-and-posts-div2-left span {
@@ -1797,7 +1830,7 @@ body {
     .faq {
         width: 100%;
         flex-direction: column;
-        padding: 40px 15px;
+        padding: 00px 15px;
     }
 
     .faq-contact-us {
@@ -1811,11 +1844,6 @@ body {
 
     .faq-right-divs {
         width: 260%;
-        padding: 15px;
-    }
-
-    .faq-right-inside {
-        gap: 2.5vw;
     }
 
     .wo-we-are {
@@ -1824,7 +1852,7 @@ body {
     }
 
     .wo-we-are-content-div {
-        width: 90%;
+        width: 100%;
     }
 
     .wo-we-are-div1 {
@@ -1852,10 +1880,19 @@ body {
     .service-description {
         font-size: 20px;
     }
+
+    .news-and-posts-our-expertise-main-heading {
+        font-size: 40px;
+
+    }
 }
 
 hr {
     color: #a9a2a2;
+}
+
+.news-and-posts-our-expertise-main-heading span {
+    width: 100%;
 }
 
 .coaching-videos {
@@ -2045,67 +2082,106 @@ hr {
         background-position: center 0;
     }
 
+    .header-content-bottom-section {
+        width: 100vw;
+    }
+
+    .faq-question {
+        width: 95vw;
+    }
+
+    .faq-right-inside .open {
+        width: 95vw;
+    }
 }
 
 .faq-item {
-  margin-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 .faq-question {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 14px 14px;
-  border-radius: 10px;
-  font-weight: 600;
-  font-size: 1.1rem;
-  cursor: pointer;
-  border: 1px solid #e2e2e2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 14px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: 1px solid #e2e2e2;
 }
 
 .faq-toggle {
-  font-size: 1.5rem;
-  font-weight: bold;
-  transition: transform 0.2s;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: transform 0.2s;
 }
 
 .faq-answer {
-  display: none;
-   background: linear-gradient(to right, #019297 0%, #73ed7c 100%);
-  color: #fff;
-  margin-top: 4px;
-  padding: 22px 24px;
-  border-radius: 10px;
-  font-size: 16px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  animation: fadeIn 0.3s;
-  font-weight: 400;
+    display: none;
+    background: linear-gradient(to right, #019297 0%, #73ed7c 100%);
+    color: #fff;
+    margin-top: 4px;
+    padding: 22px px;
+    border-radius: 10px;
+    font-size: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    animation: fadeIn 0.3s;
+    font-weight: 400;
 }
 
+.faq-item.open,
+.faq-item::after {
+    background: linear-gradient(to right, #019297 0%, #73ed7c 100%);
+    border-radius: 10px;
+}
+
+.faq-right-inside .open {
+    color: #fff;
+}
+
+.faq-right-inside .open .faq-question {
+    border-radius: 0px;
+    font-size: 20px
+}
+
+.faq-right-inside .open .faq-toggle {
+    color: #042A2D;
+}
+
+
 .faq-item.open .faq-answer {
-  display: block;
+    display: block;
+    padding: 14px
 }
 
 .faq-item.open .faq-toggle {
-  content: "×";
-  transform: rotate(90deg);
+    content: "×";
+    transform: rotate(90deg);
 }
 
 .faq-item.open .faq-toggle::after {
-  content: "×";
-  display: inline;
+    content: "×";
+    display: inline;
 }
 
 .faq-item .faq-toggle::after {
-  content: "+";
-  display: inline;
+    content: "+";
+    display: inline;
 }
 
 .faq-item.open .faq-toggle::after {
-  content: "×";
+    content: "×";
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-10px);}
-  to { opacity: 1; transform: translateY(0);}
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

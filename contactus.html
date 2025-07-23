@@ -18,7 +18,7 @@
                     <li><a href="/index.html">Home</a></li>
                     <li><a href="/aboutus.html">About Us</a></li>
                     <li><a href="/ourservices.html">Services</a></li>
-                    <li><a href="">Pages</a></li>
+                    <li><a href="/pages.html">Pages</a></li>
                     <li><a href="/contactus.html">Contact us</a></li>
                 </div>
             </div>
@@ -44,7 +44,7 @@
                 <li><a href="/index.html">Home</a></li>
                     <li><a href="/aboutus.html">About Us</a></li>
                     <li><a href="/ourservices.html">Services</a></li>
-                    <li><a href="">Pages</a></li>
+                    <li><a href="/pages.html">Pages</a></li>
                     <li><a href="/contactus.html">Contact us</a></li>
             </ul>
         </div>
@@ -143,7 +143,7 @@
   </div>
 </section>
 
-  <section class="faq">
+    <section class="faq">
         <div class="faq-left">
             <div class="our-expertise-label">// <span>FAQ</span></div>
             <h1 class="our-expertise-main-heading">
@@ -280,5 +280,18 @@
             </div>
         </div>
     </footer>
+
+     <script>
+        document.querySelectorAll('.faq-question').forEach(function (q) {
+            q.addEventListener('click', function () {
+                // Optional: close all others
+                document.querySelectorAll('.faq-item').forEach(function (item) {
+                    if (item !== q.parentElement) item.classList.remove('open');
+                });
+                // Toggle this one
+                q.parentElement.classList.toggle('open');
+            });
+        });
+    </script>
 </body>
 </html>

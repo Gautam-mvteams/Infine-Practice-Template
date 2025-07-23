@@ -20,7 +20,7 @@
                     <li><a href="/index.html">Home</a></li>
                     <li><a href="/aboutus.html">About Us</a></li>
                     <li><a href="/ourservices.html">Services</a></li>
-                    <li><a href="">Pages</a></li>
+                    <li><a href="/pages.html">Pages</a></li>
                     <li><a href="/contactus.html">Contact us</a></li>
                 </div>
             </div>
@@ -46,7 +46,7 @@
                 <li><a href="/index.html">Home</a></li>
                     <li><a href="/aboutus.html">About Us</a></li>
                     <li><a href="/ourservices.html">Services</a></li>
-                    <li><a href="">Pages</a></li>
+                    <li><a href="/pages.html">Pages</a></li>
                     <li><a href="/contactus.html">Contact us</a></li>
             </ul>
         </div>
@@ -447,7 +447,7 @@
             <div class="faq-right-inside">
                 <div class="faq-right-divs">
                     <div class="faq-right-inside">
-                        <div class="faq-item">
+                        <div id="faq-item-div" class="faq-item">
                             <div class="faq-question">
                                 <span>How does coaching differ from therapy?</span>
                                 <span class="faq-toggle"></span>
@@ -559,6 +559,19 @@
             </div>
         </div>
     </footer>
+
+     <script>
+        document.querySelectorAll('.faq-question').forEach(function (q) {
+            q.addEventListener('click', function () {
+                // Optional: close all others
+                document.querySelectorAll('.faq-item').forEach(function (item) {
+                    if (item !== q.parentElement) item.classList.remove('open');
+                });
+                // Toggle this one
+                q.parentElement.classList.toggle('open');
+            });
+        });
+    </script>
 </body>
 
 </html>
